@@ -1,0 +1,168 @@
+nav{
+    display: inline-block; 
+    border: 3px solid #b78565; 
+    padding: 10px; 
+    color: #b78565;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+h1{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: #b78565;
+    text-align: center;
+    border-bottom: solid;
+    margin: -10px;
+
+
+}
+
+h2, h3, .error_message{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: #b78565;
+    text-align: center;
+    margin: 40px;
+}
+
+body{
+    background-color:#335b3a;
+    color:#b78565;
+
+}
+
+#body{
+    text-align: center;
+    border: 3px solid #b78565; 
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 10px; 
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-width: 10px;
+
+    color: #b78565;
+}
+
+footer{
+    
+    position: relative;
+    bottom: -5;
+    left: 10;
+    font-family: (serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 15px;
+
+}
+
+a:link, a:focus, a:active, a:visited{
+    color: #b78565;
+
+}
+a:hover{
+    color: white;
+}
+
+#first2{
+    width: 250px;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+    margin-top: -550px; /* Adjusted value */
+    width: 300px;
+    display: block;
+}
+#second2{
+    width: 400px;
+    height: auto;
+    float:  right;
+    margin-left: 300px;
+    margin-top: -450px;
+    width: 300px
+}
+
+
+
+.label{
+    border: 5px solid black;
+    background-color: white;
+    color: black;
+    margin: 20px 250px; 
+    font-family: Garamond, Times, 'Times New Roman', serif; 
+
+}
+
+.classes{
+    
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: -300px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+#sbox{
+    padding-right: 88px;
+}
+
+
+#jbox{
+    padding-left: 105px;
+}
+.label .fbox{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px; 
+
+    
+}
+
+.info{
+    padding-left: 950px;
+}
+
+#from{
+
+    font-size: 30px;
+
+
+    position: absolute;
+    bottom: 200;
+    left: 380;   
+}
+#to{
+    font-size: 30px;
+    position: absolute;
+    bottom: 200;
+    left: 680;  
+}
+
+
+
+
+
+
+/*questions
+
+1. how to move next day air upwards
+2. why are the fonts not changin?
+
+.label #plen{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.label #wlen{
+    margin-left: 1040px;
+}
+.fbox {
+    display: flex;
+    justify-content: space-between;
+}
+*/
+
+

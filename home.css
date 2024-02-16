@@ -1,0 +1,106 @@
+
+/*h1{
+
+    font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+*/
+
+nav{
+
+    display: inline-block; 
+    border: 3px solid #b78565; 
+    padding: 10px; 
+    color: #b78565;
+    font-weight: bold;
+    font-size: 15px;
+
+    
+}
+
+
+
+h1{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: #b78565;
+    text-align: center;
+    border-bottom: solid;
+    margin: -10px;
+    text-align: center;
+
+
+}
+
+title{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: #b78565;
+    text-align: center;
+    border-bottom: solid;
+
+
+
+    margin: -10px;
+
+
+}
+
+body{
+    background-color:#335b3a;
+    color:#b78565;
+    
+    
+}
+
+#description{
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    align-items: center;
+
+    font-size: 20px;
+
+    font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    
+}
+
+#num1, #num2{
+
+    float:  left;
+    margin-left: 350px;
+    width: 300px;
+
+}
+
+
+#first, #second, #third, #fifth, #sixth, #fourth{
+    width: 250px;
+    height: auto;
+}
+
+
+
+footer{
+    
+    position: absolute;
+    bottom: -5;
+    left: 10;
+    font-family: (serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 15px;
+
+}
+
+a:link, a:focus, a:active, a:visited{
+    color: #b78565;
+
+}
+a:hover{
+    color: white;
+}
+
+
+
