@@ -1,4 +1,9 @@
 <?php
+#Jainam Shah
+#2/16/24
+#IT202 - SECTION 006
+#Phase 1 - website
+#jds227@njit.edu
     #MAKE SURE YOU ADD PICTURES HERE
     $firstname = htmlspecialchars($_POST["firstname"]);
     $lastname = htmlspecialchars($_POST["lastname"]);
