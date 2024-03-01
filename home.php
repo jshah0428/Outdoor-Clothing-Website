@@ -23,7 +23,8 @@
 
         <nav>
             <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a>
+            <a href = "shipping.php"> Shipping </a> ||
+            <a href = "database_visualize.php"> Merchandise </a>
         </nav>
 
         <?php include('header.php');?>

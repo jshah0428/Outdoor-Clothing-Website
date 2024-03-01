@@ -1,0 +1,121 @@
+nav{
+    display: inline-block; 
+    border: 3px solid #b78565; 
+    padding: 10px; 
+    color: #b78565;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+h1{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: #b78565;
+    text-align: center;
+    border-bottom: solid;
+    margin: -10px;
+
+
+}
+
+h2{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: #b78565;
+    text-align: center;
+    margin: 40px;
+}
+footer{
+    
+    position: absolute;
+    bottom: -5;
+    left: 10;
+    font-family: (serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 15px;
+
+}
+
+body{
+    background-color:#335b3a;
+    color:#b78565;
+}
+
+#links{
+    text-align: left;
+    border: 3px solid #b78565; 
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 10px; 
+    margin-top: 50px;
+    /*margin-left: 500px;*/
+    margin-right: 1000px;
+    margin-bottom: 50px;
+
+    border-width: 10px;
+
+    color: #b78565;
+    
+}
+
+#links #p{
+    text-align: left;
+    font-weight: bold;
+    color: #b78565;
+    
+}
+
+
+#attributes{
+    text-align: right;
+    border: 3px solid #b78565; 
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 10px; 
+    margin-top: 100px;
+    margin-left: 700px;
+    margin-right: 50px;
+   
+    border-width: 10px;
+
+    color: #b78565;
+}
+a:link, a:focus, a:active, a:visited{
+    color: #b78565;
+
+}
+a:hover{
+    color: white;
+}
+
+#attlink:link, #attlink:focus, #attlink:active, #attlink:visited{
+    color: #b78565;
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 15px;
+
+}
+
+#attlink:hover{
+    color: black;
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+#first2{
+    width: 500px;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+    margin-top: -200px; /* Adjusted value */
+    display: block;
+}
+#second2{
+    width: 450px;
+    height: auto;
+    float:  right;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: -520px;
+}

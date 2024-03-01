@@ -63,7 +63,8 @@
 
         <nav>
             <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a>
+            <a href = "shipping.php"> Shipping </a> ||
+            <a href = "shipping.php"> Merchandise </a>
         </nav>
 
         <?php
