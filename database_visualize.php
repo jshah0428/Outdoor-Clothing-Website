@@ -1,4 +1,12 @@
 <?php
+
+
+#Jainam Shah
+#3/1/24
+#IT202 - SECTION 006
+#Phase 2 - website
+#jds227@njit.edu
+
 //new version of slide 24
 $dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=jds227'; //look at PHPmyadmin for code. 
 $username = 'jds227';
