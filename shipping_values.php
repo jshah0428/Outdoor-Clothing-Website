@@ -1,8 +1,8 @@
 <?php
 #Jainam Shah
-#2/16/24
+#3/22/24
 #IT202 - SECTION 006
-#Phase 1 - website
+#Phase 3 - website
 #jds227@njit.edu
     #MAKE SURE YOU ADD PICTURES HERE
     $firstname = htmlspecialchars($_POST["firstname"]);
@@ -64,7 +64,8 @@
         <nav>
             <a href = "home.php"> Home </a> ||
             <a href = "shipping.php"> Shipping </a> ||
-            <a href = "shipping.php"> Merchandise </a>
+            <a href = "database_visualize.php"> Merchandise </a> ||
+            <a href = "create.php"> Add Products</a>
         </nav>
 
         <?php

@@ -1,9 +1,9 @@
 
 <?php
 #Jainam Shah
-#2/16/24
+#3/22/24
 #IT202 - SECTION 006
-#Phase 1 - website
+#Phase 3 - website
 #jds227@njit.edu
 ?>
 
@@ -24,7 +24,8 @@
         <nav>
             <a href = "home.php"> Home </a> ||
             <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a>
+            <a href = "database_visualize.php"> Merchandise </a> ||
+            <a href = "create.php"> Add Products</a>
         </nav>
 
         <?php include('header.php');?>

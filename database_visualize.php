@@ -2,9 +2,9 @@
 
 
 #Jainam Shah
-#3/1/24
+#3/22/24
 #IT202 - SECTION 006
-#Phase 2 - website
+#Phase 3 - website
 #jds227@njit.edu
 
 //new version of slide 24
@@ -65,13 +65,13 @@ $statement2->closeCursor();
         <nav>
             <a href = "home.php"> Home </a> ||
             <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a>
+            <a href = "database_visualize.php"> Merchandise </a> ||
+            <a href = "create.php"> Add Products</a>
         </nav>
 
         <?php include('header.php');?>
 
-        <h2>Product Information</h1>
-
+        <h2>Product Information</h2>
 
 
         <main>

@@ -36,6 +36,43 @@ h2{
     text-align: center;
     margin: 40px;
 }
+
+ h2{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: #b78565;
+    text-align: center;
+    margin: 40px;
+    font-weight: bold;
+}
+
+#error, #error2{
+
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-weight: bold;
+}
+
+#form{
+    text-align: center;
+    border: 3px solid #b78565; 
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 10px; 
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-width: 10px;
+
+    color: #b78565;
+
+    font-weight: bold;
+
+}
 footer{
     
     position: absolute;
@@ -50,6 +87,8 @@ body{
     background-color:#335b3a;
     color:#b78565;
 }
+
+
 
 #links{
     text-align: left;
@@ -76,22 +115,6 @@ body{
     
 }
 
-
-#attributes{
-    text-align: right;
-    border: 3px solid #b78565; 
-    width: auto;
-    height: auto;
-    background-color: white;
-    padding: 10px; 
-    margin-top: 100px;
-    margin-left: 700px;
-    margin-right: 50px;
-   
-    border-width: 10px;
-
-    color: #b78565;
-}
 a:link, a:focus, a:active, a:visited{
     color: #b78565;
 
@@ -100,32 +123,33 @@ a:hover{
     color: white;
 }
 
-#attlink:link, #attlink:focus, #attlink:active, #attlink:visited{
-    color: #b78565;
-    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
-    font-size: 15px;
+#success{
+    font-family: (serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    position:absolute;
+    margin-bottom: 150px;
+    margin-left: 470px;
 
 }
 
-#attlink:hover{
-    color: black;
-    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
-    font-size: 15px;
-}
 
 #first2{
-    width: 500px;
+    width: 250px;
     height: auto;
     float: left;
     margin-left: 50px;
-    margin-top: -200px; /* Adjusted value */
+    margin-top: -350px; /* Adjusted value */
+    width: 300px;
     display: block;
 }
 #second2{
-    width: 450px;
+    width: 400px;
     height: auto;
     float:  right;
     margin-left: 300px;
-    margin-right: 100px;
-    margin-top: -520px;
+    margin-top: -350px;
+    width: 300px
 }
