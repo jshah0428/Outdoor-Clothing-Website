@@ -1,12 +1,13 @@
 <?php
 
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
+require_once("databasenjit.php");
 function uniquenes_error($db, $code){
-    require_once("databasenjit.php");
+
     $error_message = '';
     $query = 'SELECT outclotcode FROM outclot';
     $news = $db->prepare($query);

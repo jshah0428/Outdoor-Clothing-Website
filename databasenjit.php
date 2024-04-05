@@ -1,17 +1,22 @@
 <?php
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
+
+
+
 
 $dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=jds227'; //look at PHPmyadmin for code. 
 $username = 'jds227';
 $password = 'Jaiking101!';
 
 
+
 try{
     $db = new PDO($dsn, $username, $password);
+
     //echo '<p> you are successfully connects to the njit database<p>'; 
 }
 

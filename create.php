@@ -1,8 +1,8 @@
 <?php
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
 require_once("databasenjit.php");
 
@@ -16,16 +16,35 @@ $statementexec->closeCursor();
 
 
  
-                            
+session_start();
+if(!isset($_SESSION['is_valid_admin'])){
+    echo "<style>#error99 {
+        font-family: Georgia, Garamond, Times, 'Times New Roman', serif;
+        font-size: 35px;
+        color: #b78565;
+        position: fixed;
+        bottom: 300px; 
+        left: 45%; 
+        transform: translateX(-50%); 
+        z-index: 999; 
+    }</style>";
+    
+    echo "<h2 id='error99'>" . "Error: User is not logged in." . "</h2>";
+    
+    include("login.php");
+    exit();
+}                     
 
 ?>
 
 
 
+
+
 <html>
-     <head>
+    <head>
         <title>Outdoor Ventures & co</title>
-        <link rel="stylesheet" href= create.css />
+        <link rel="stylesheet" href= "create.css" />
     </head>
 
     <body>
@@ -33,12 +52,9 @@ $statementexec->closeCursor();
             <p style = "font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif; font-size: 15px"> <em>&copy; Jainam Shah </em></p>
         </header>
         
-        <nav>
-            <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a> ||
-            <a href = "create.php"> Add Products</a>
-        </nav>
+        <?php
+            include("nav.php");
+        ?>
         <?php include('header.php');?>
 
         <h2>Add a Product</h2>
@@ -81,9 +97,16 @@ $statementexec->closeCursor();
         </main>
         </div>
 
+        <div class="images-div" style="
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    ">
         <figure> <img id = "first2" src = "images\money.avif" alt = "dollar sign" width = 100/></figure>
         <figure> <img id = "second2" src = "images\shopping_cart.jpg" alt = "shoppping cart" width = 70/></figure>
-                  
+                
+                </div>
         <?php include('footer.php');?>
         <!-- make sure you add figure elements-->
 

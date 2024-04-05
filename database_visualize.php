@@ -2,12 +2,13 @@
 
 
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
 
 //new version of slide 24
+
 $dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=jds227'; //look at PHPmyadmin for code. 
 $username = 'jds227';
 $password = 'Jaiking101!';
@@ -53,7 +54,7 @@ $statement2->closeCursor();
 
     <head>
         <title>Outdoor Ventures & co</title>
-        <link rel="stylesheet" href= dbvisual.css />
+        <link rel="stylesheet" href= "dbvisual.css" />
     </head>
 
 
@@ -62,12 +63,9 @@ $statement2->closeCursor();
             <p style = "font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif; font-size: 15px"> <em>&copy; Jainam Shah </em></p>
         </header> 
 
-        <nav>
-            <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a> ||
-            <a href = "create.php"> Add Products</a>
-        </nav>
+        
+
+        <?php include("nav.php");?>
 
         <?php include('header.php');?>
 
@@ -105,6 +103,14 @@ $statement2->closeCursor();
                                     <td><?php echo $infoarr['description']; ?></td> 
                                     <td><?php echo $infoarr['color']; ?></td>
                                     <td><?php echo $infoarr['price']; ?></td>
+                                    <?php if(isset($_SESSION['is_valid_admin'])){?>
+                                    <td>
+                                        <form action = "delete.php" method = "post">
+                                            <input type = "hidden" name = "outclotcode" value = "<?php echo $infoarr['outclotCode']; ?>" /> <!-- echoing $infoarr is important to pass a value into the form. !-->
+                                            <input type = "submit" value = "Delete" />
+                                        </form>
+                                    </td>
+                                    <?php } ?>
                                 </tr>
                         <?php endforeach; ?>      
                                 </table>
@@ -117,8 +123,8 @@ $statement2->closeCursor();
         
 
         </main>
-        <figure> <img id = "first2" src = "images\boots_phase_2.jpg" alt = "boots" width = 100/></figure>
-        <figure> <img id = "second2" src = "images/winter_jacket_phase_2.jpg" alt = "winter jacket" width = 70/></figure>
+        <figure> <img id = "first5" src = "images/boots_phase_2.jpg" alt = "boots" width = 70/></figure>
+        <figure> <img id = "second5" src = "images/winter_jacket_phase_2.jpg" alt = "winter jacket" width = 70/></figure>
         <?php include('footer.php');?>
     </body>
 

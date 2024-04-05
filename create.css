@@ -1,8 +1,8 @@
 /*
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
 
 */
@@ -135,7 +135,6 @@ a:hover{
 
 }
 
-
 #first2{
     width: 250px;
     height: auto;
@@ -152,4 +151,49 @@ a:hover{
     margin-left: 300px;
     margin-top: -350px;
     width: 300px
+}
+
+#success332{
+    font-family:  Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-weight: bold;
+}
+
+#first3{
+    width: 350px;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+    margin-top: -150px; /* Adjusted value */
+    width: 300px;
+    display: block;
+}
+#second3{
+   
+    height: auto;
+    position: absolute;
+
+    margin-left: 300px;
+
+    width: 300px;
+    top: 200px;
+    right: 150px;
+
+}
+
+
+.images-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.images-div img{
+    height: 300px;
+    width: 400px;
 }

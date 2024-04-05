@@ -1,10 +1,33 @@
 
 <?php
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
+?>
+
+<?php
+
+session_start();
+if(!isset($_SESSION['is_valid_admin'])){
+    echo "<style>#error99 {
+        font-family: Georgia, Garamond, Times, 'Times New Roman', serif;
+        font-size: 35px;
+        color: #b78565;
+        position: fixed;
+        bottom: 300px; 
+        left: 45%; 
+        transform: translateX(-50%); 
+        z-index: 999; 
+    }</style>";
+    
+    echo "<h2 id='error99'>" . "Error: User is not logged in." . "</h2>";
+    
+    include("login.php");
+    exit();
+}
+
 ?>
 
 <html>
@@ -21,12 +44,8 @@
             <p style = "font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif; font-size: 15px"> <em>&copy; Jainam Shah </em></p>
         </header> 
 
-        <nav>
-            <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a> ||
-            <a href = "create.php"> Add Products</a>
-        </nav>
+
+        <?php include("nav.php");?>
 
         <?php include('header.php');?>
 

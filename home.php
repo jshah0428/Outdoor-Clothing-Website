@@ -21,13 +21,10 @@
             <p style = "font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif; font-size: 15px"> <em>&copy; Jainam Shah </em></p>
         </header> 
 
-        <nav>
-            <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a> ||
-            <a href = "create.php"> Add Products</a>
-        </nav>
 
+        <?php
+            include("nav.php");
+        ?>
         <?php include('header.php');?>
         <main>
             

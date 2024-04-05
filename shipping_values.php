@@ -1,8 +1,8 @@
 <?php
 #Jainam Shah
-#3/22/24
+#4/5/24
 #IT202 - SECTION 006
-#Phase 3 - website
+#Phase 4 - website
 #jds227@njit.edu
     #MAKE SURE YOU ADD PICTURES HERE
     $firstname = htmlspecialchars($_POST["firstname"]);
@@ -61,12 +61,9 @@
             <p style = "font-family: Georgia(serif), Garamond(serif), Times, 'Times New Roman', serif; font-size: 15px"> <em>&copy; Jainam Shah </em></p>
         </header> 
 
-        <nav>
-            <a href = "home.php"> Home </a> ||
-            <a href = "shipping.php"> Shipping </a> ||
-            <a href = "database_visualize.php"> Merchandise </a> ||
-            <a href = "create.php"> Add Products</a>
-        </nav>
+        <?php
+            include("nav.php");
+        ?>
 
         <?php
             include("header.php");

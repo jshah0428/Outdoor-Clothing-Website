@@ -1,0 +1,18 @@
+/*
+#Jainam Shah
+#4/5/24
+#IT202 - SECTION 006
+#Phase 4 - website
+#jds227@njit.edu
+*/
+
+
+#names {
+    position: fixed;
+    text-align: right;
+    right: 100px;
+    top: 30px; 
+    font-size: 20px;
+    font-family: Georgia, Garamond, Times, 'Times New Roman', serif; 
+    z-index: 2; 
+}
