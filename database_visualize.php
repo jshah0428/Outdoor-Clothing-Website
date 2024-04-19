@@ -46,6 +46,7 @@ $statement2->bindValue(':outclotCategoryID', $outclotCategoryID);
 $statement2->execute();
 $info = $statement2->fetchAll();
 $statement2->closeCursor();
+
 ?>
 
 
@@ -93,23 +94,29 @@ $statement2->closeCursor();
                                     <th>Name</th>
                                     <th>Description</th>
                                     <th>Color</th>
-                                    <th>Price</th>
-                                    </tr>
+                                    <th>Price</th>  
+                                 </tr>
 
                         <?php foreach ($info as $infoarr) : ?>
                                 <tr>
-                                    <td><?php echo $infoarr['outclotCode']; ?></td> 
+                                    <td><a href = "details.php?outclot_ID=<?php echo urlencode($infoarr['outclotID'])?>"><?php echo $infoarr['outclotCode']; ?></td>  <!-- MAY POTENTIALL NEED THIS LATER ?product_id=<?//php echo urlencode($infoarr['outclotID'])?>!-->
                                     <td><?php echo $infoarr['outclotName']; ?></td> 
                                     <td><?php echo $infoarr['description']; ?></td> 
                                     <td><?php echo $infoarr['color']; ?></td>
                                     <td><?php echo $infoarr['price']; ?></td>
                                     <?php if(isset($_SESSION['is_valid_admin'])){?>
                                     <td>
-                                        <form action = "delete.php" method = "post">
+                                        <form action = "delete.php" method = "post" onsubmit="return deleteconfirmation();" >
                                             <input type = "hidden" name = "outclotcode" value = "<?php echo $infoarr['outclotCode']; ?>" /> <!-- echoing $infoarr is important to pass a value into the form. !-->
                                             <input type = "submit" value = "Delete" />
                                         </form>
                                     </td>
+                                    <script>
+                                        function deleteconfirmation(){
+                                            return confirm("Are you sure you want to delete this item?");
+                                        }
+                                    </script>
+                                    
                                     <?php } ?>
                                 </tr>
                         <?php endforeach; ?>      

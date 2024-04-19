@@ -62,7 +62,7 @@ if(!isset($_SESSION['is_valid_admin'])){
         <div id = "form">
             <h2> Product Information </h2>
         <main>
-            <form action = "create_new_product.php" method = "post">
+            <form onsubmit = "return validate(this)" action = "create_new_product.php" method = "post" name = "create_form" id = "create_form">
             <label> Category Type: </label>
             <select name = "outclotCategoryID">
                 <?php foreach ($diffcats as $cat):?>
@@ -75,24 +75,29 @@ if(!isset($_SESSION['is_valid_admin'])){
                 
             
             <label>Code:</label>
-            <input type="text" name="code"><br>
+            <input type="text" name="code" id = "code">
+            <span id = "codespan"></span><br>
 
             <label>Name:</label>
-            <input type="text" name="name"><br>
+            <input type="text" name="name" id = "name" >
+            <span id = "namespan"></span><br>
 
             <label>Description:</label>
-            <textarea id="descrip" name="description" rows = "4"></textarea><br>
+            <textarea id="descrip" name="description" rows = "4" id ="description"></textarea>
+            <span id = "descripspan"></span><br>
 
-            <label>Price (Cannot be over 450 dollars):</label>
-            <input type="number" name="price" min = 0 max = 450 step = 0.01><br>
+            <label>Price (Cannot be over 100,000 dollars):</label>
+            <input id = "price" type="number" name="price" min = 0 max = 100000 step = 0.01>
+            <span id = "pricespan"></span><br>
 
             <label>Color:</label>
-            <input type="text" name="color"><br>
-
+            <input type="text" name="color" id = "color">
+            <span id = "colorspan"></span><br>
+            
             <input type = "reset" value = "Clear all values">
             <input type = "submit" value = "Create New Product"> 
 
-                </form>
+        </form>
 
         </main>
         </div>
@@ -109,7 +114,94 @@ if(!isset($_SESSION['is_valid_admin'])){
                 </div>
         <?php include('footer.php');?>
         <!-- make sure you add figure elements-->
+        
+        
+            <!-- copy/paste the CDN from releases.jquery.com-->
+            <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
 
+            <script>
+                function validate(form){      
+                    let check = true;
+                    const code = $("#code").val();
+                    const name = $("#name").val();
+                    const description = $("#descrip").val();
+                    const price = $('#price').val();
+                    const color = $('#color').val();
+
+                    
+
+
+                    if (code === "") {
+                        $("#codespan").text("This field is required.");
+                        check = false;
+                    } else if (code.length < 4) {
+                        $("#codespan").text("Your code is too short.");
+                        console.log('hello')
+                        check = false;
+                    } else if (code.length > 10) {
+                        $("#codespan").text("Your code is too long.");
+                        check = false;
+                    }
+
+                    if (name === "") {
+                        $("#namespan").text("This field is required.");
+                        check = false;
+                    } else if (name.length < 10) {
+                        $("#namespan").text("Your name is too short.");
+                        check = false;
+                    } else if (name.length > 100) {
+                        $("#namespan").text("Your name is too long.");
+                        check = false;
+                    }
+
+                    if (description === "") {
+                        $("#descripspan").text("This field is required.");
+                        check = false;
+                    } else if (description.length < 10) {
+                        $("#descripspan").text("Your description is too short.");
+                        check = false;
+                    } else if (description.length > 255) {
+                        $("#descripspan").text("Your description is too long.");
+                        check = false;
+                    }
+
+                    if (price === "") {
+                        $("#pricespan").text("This field is required.");
+                        check = false;
+                    } else if (price <=0) {
+                        $("#pricespan").text("Your price is to low.");
+                        check = false;
+                    } else if (price > 100000) {
+                        $("#pricespan").text("Your price is to high");
+                        check = false;
+                    }
+
+                    if (color === "") {
+                        $("#colorspan").text("This field is required.");
+                        check = false;
+                    } else{
+                        for (var x=0; x<color.length; x++){
+                            if (!isNaN(color[x])){
+                                $("#colorspan").text("Not a color.");
+                                check = false
+                                break;
+                            }
+
+
+                        }
+                    }
+                    
+
+
+                    
+                    return check;
+                            
+        
+                }
+            </script>
 
     </body>
 

@@ -55,8 +55,8 @@ if ($outclotcode == NULL || $outclotname == NULL || $outclotdescriptions == NULL
 else if($outclotprice <0){
     $error_message  = "Price is to low";
 }
-else if ($outclotprice >450){
-    $error_message = "Price exceeds maximum value of 450 dollars. ";
+else if ($outclotprice >100000){
+    $error_message = "Price exceeds maximum value of 100000 dollars. ";
 }
 
 
