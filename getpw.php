@@ -1,8 +1,8 @@
 <?php
-    #Jainam Shah
-#4/5/24
+#Jainam Shah
+#4/19/24
 #IT202 - SECTION 006
-#Phase 4 - website
+#Phase 5 - website
 #jds227@njit.edu
  //helps establish connection in order to make sure that this script can access the data base. 
     //make a function that selects the email and address from the data base.
