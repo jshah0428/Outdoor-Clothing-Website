@@ -1,8 +1,8 @@
 <?php
 #Jainam Shah
-#4/5/24
+#4/19/24
 #IT202 - SECTION 006
-#Phase 4 - website
+#Phase 5 - website
 #jds227@njit.edu
 
 //recieves post request from either the login or logout page. Implement this later. First do the front end. 
