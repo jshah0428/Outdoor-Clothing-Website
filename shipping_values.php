@@ -1,9 +1,5 @@
 <?php
-#Jainam Shah
-#4/19/24
-#IT202 - SECTION 006
-#Phase 5 - website
-#jds227@njit.edu
+
     #MAKE SURE YOU ADD PICTURES HERE
     $firstname = htmlspecialchars($_POST["firstname"]);
     $lastname = htmlspecialchars($_POST["lastname"]);
@@ -25,6 +21,7 @@
     #todo, drop down boxes for states
     #filter validate stuff
 
+    #error handeling if any of the information is invalid or incomplete
     if (empty($firstname) || empty($lastname) || empty($Street_Address) || empty($City) ||  empty($ordernumber) ||empty($Zip_code) || empty($length) || empty($width) || empty($height) || empty($valuepack)){
         $error_message = "You did not input a value for your package information. ";
     }

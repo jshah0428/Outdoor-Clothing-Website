@@ -1,9 +1,5 @@
 <?php
-#Jainam Shah
-#4/19/24
-#IT202 - SECTION 006
-#Phase 5 - website
-#jds227@njit.edu
+
 require_once('databasenjit.php');
 
 $outclotID = filter_input(INPUT_GET, 'outclot_ID', FILTER_VALIDATE_INT);

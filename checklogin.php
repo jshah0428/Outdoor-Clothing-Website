@@ -1,9 +1,5 @@
 <?php
-#Jainam Shah
-#4/19/24
-#IT202 - SECTION 006
-#Phase 5 - website
-#jds227@njit.edu
+
 
 //recieves post request from either the login or logout page. Implement this later. First do the front end. 
 require_once("getpw.php");

@@ -1,9 +1,4 @@
 <?php
-#Jainam Shah
-#4/19/24
-#IT202 - SECTION 006
-#Phase 5 - website
-#jds227@njit.edu
 
 
 $config = json_decode(file_get_contents('ignore\config.json'), true);
@@ -14,12 +9,6 @@ $dbname = $config['database']['dbname'];
 $username = $config['database']['username'];
 $password = $config['database']['password'];
 $dsn = "mysql:host=$host;port=$port;dbname=$dbname";
-
-$dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=jds227'; //look at PHPmyadmin for code. 
-$username = 'jds227';
-$password = 'Jaiking101!';
-
-
 
 try{
     $db = new PDO($dsn, $username, $password);

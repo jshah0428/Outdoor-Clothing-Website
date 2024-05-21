@@ -1,10 +1,6 @@
 <?php
 
-#Jainam Shah
-#4/19/24
-#IT202 - SECTION 006
-#Phase 5 - website
-#jds227@njit.edu
+
 require_once("databasenjit.php");
 function uniquenes_error($db, $code){
 
@@ -16,6 +12,7 @@ function uniquenes_error($db, $code){
     $oldcodes = $news->fetchAll();
 
     foreach ($oldcodes as $val){
+        //if repeated code
         if ($val['outclotcode'] == $code){
             
             $error_message = "You have repeated a Code. Please use a unique code.";
@@ -38,6 +35,7 @@ $error_message = '';
 
 echo '<link rel="stylesheet" type="text/css" href="create.css">';
 
+#check if empty value
 if ($outclotcode == NULL || $outclotname == NULL || $outclotdescriptions == NULL || $outclotcolor == NULL || $outclotprice == NULL){ //$outclotprice == NULL ||
 
     $error_message = "One of the values is empty";
@@ -45,13 +43,8 @@ if ($outclotcode == NULL || $outclotname == NULL || $outclotdescriptions == NULL
     
 }
 
-/*else if($outclotprice == FALSE){
-    $error_message = "Price has the wrong input type";
 
-
-} ask if i actually need this.*/
-
-/* ASK ABOUT THIS IF STATEMENT!!!*/
+#price check
 else if($outclotprice <0){
     $error_message  = "Price is to low";
 }
@@ -59,7 +52,7 @@ else if ($outclotprice >100000){
     $error_message = "Price exceeds maximum value of 100000 dollars. ";
 }
 
-
+#if any error message is true, this will execute
 if (!empty($error_message)){
         echo '<div id = "error">' . $error_message . '</div>';
         include("create.php");
@@ -95,8 +88,7 @@ else{
 
 }
 
-//questions, look above, very important. 
-//ask if it is ok if it is impossible to add a letter to it. that way we don't need error handling.
+
 
 
 ?>

@@ -1,9 +1,5 @@
 <?php
-#Jainam Shah
-#4/19/24
-#IT202 - SECTION 006
-#Phase 5 - website
-#jds227@njit.edu
+
 require_once("databasenjit.php");
 
 $query = 'SELECT * 
@@ -86,6 +82,7 @@ if(!isset($_SESSION['is_valid_admin'])){
             <textarea id="descrip" name="description" rows = "4" id ="description"></textarea>
             <span id = "descripspan"></span><br>
 
+            <!-- error handeling before this goes into form processing-->
             <label>Price (Cannot be over 100,000 dollars):</label>
             <input id = "price" type="number" name="price" min = 0 max = 100000 step = 0.01>
             <span id = "pricespan"></span><br>
