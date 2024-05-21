@@ -6,6 +6,14 @@
 #jds227@njit.edu
 
 
+$config = json_decode(file_get_contents('ignore\config.json'), true);
+
+$host = $config['database']['host'];
+$port = $config['database']['port'];
+$dbname = $config['database']['dbname'];
+$username = $config['database']['username'];
+$password = $config['database']['password'];
+$dsn = "mysql:host=$host;port=$port;dbname=$dbname";
 
 $dsn = 'mysql:host=sql1.njit.edu;port=3306;dbname=jds227'; //look at PHPmyadmin for code. 
 $username = 'jds227';
